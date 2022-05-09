@@ -134,7 +134,7 @@ bool LoRaWANClass::init(void) {
 
     // Initialise the SPI port
     //  Removing because initializing custom in main file to set pins
-    //  SPI.begin();
+    SPI.begin();
 
     /*** This prevents the use of other SPI devices with different settings ***/
     // SPI.beginTransaction(SPISettings(4000000,MSBFIRST,SPI_MODE0));
